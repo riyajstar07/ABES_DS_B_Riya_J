@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Menu</title>
+    <style>
+        /* Parent container */
+        #aaa {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap; /* responsive ke liye */
+            margin-top: 30px;
+        }
+
+        /* Card design */
+        .riya {
+            width: 300px;
+            background-color: rgb(226, 232, 235);
+            font-size: 20px;
+            margin: 20px;
+            padding: 20px;
+            border: 5px solid palevioletred;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Card hover effect */
+        .riya:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.3);
+        }
+
+        /* Image styling */
+        img {
+            border-radius: 15px;
+            width: 100%;
+            height: 230px;
+            object-fit: cover;
+        }
+
+        /* Price styling */
+        .price {
+            font-size: 22px;
+            font-weight: bold;
+            color: #333;
+            margin: 10px 0;
+        }
+
+        /* Button container */
+        .btn-box {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        /* Common button style */
+        .btn {
+            flex: 1;
+            background-color: rgb(67, 238, 113);
+            color: black;
+            height: 45px;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        /* Buy Now hover */
+        .btn:hover {
+            background-color: rgb(12, 190, 110);
+            transform: scale(1.05);
+        }
+
+        /* Add to Cart button */
+        .cart-btn {
+            background-color: #007bff;
+            color: white;
+        }
+
+        .cart-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div id="aaa">
+        <!-- Card 1 -->
+        <div class="riya">
+            <img src="burger.jpg" alt="Burger">
+            <h3>Burger</h3>
+            <p class="price">₹79</p>
+            <div class="btn-box">
+                <button class="btn">Buy Now</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="riya">
+            <img src="fries.jpg" alt="Fries">
+            <h3>Fries</h3>
+            <p class="price">₹99</p>
+            <div class="btn-box">
+                <button class="btn">Buy Now</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="riya">
+            <img src="coke.jpg" alt="Coke">
+            <h3>Coke</h3>
+            <p class="price">₹49</p>
+            <div class="btn-box">
+                <button class="btn">Buy Now</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

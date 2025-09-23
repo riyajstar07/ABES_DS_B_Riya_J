@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #app{
+            text-align: center;
+            margin-top: 20px;
+            border: 2px solid black;
+            border-radius: 4px;
+            width: 200px;
+            }
+        button{
+            font-size: 25px;
+            width: 60px;
+            height: 60px;
+            margin: 15px;
+            }
+    </style>
+</head>
+<body>
+<center><div id="parent">
+        <div id="child"><img id="img" src="hideimage.jpg" height="150px"  alt=""></div>
+        
+        <div id="child"><button onclick="hide()">Hide</button></div>
+    </div></center>
+    <script>
+        function hide(){
+            document.querySelector('#img').style.display='none';
+        }
+    </script>
+<center><div id="app">
+        <table>
+        <tr>
+                <td><div><img style="height: 80px;" src="counterlogo.jpg" alt=""></div></td>
+                <td><div><p>Counter App</p></div></td>
+        </tr>
+        <tr>
+            <td><h1 id="counting">0</h1></td>
+        </tr>
+        <tr>
+            <td><button onclick="add()">+</button></td>
+            <td><button onclick="subtract()">-</button></td>
+        </tr>
+        </table>
+        </div></center>
+        <script>
+        var i=0;
+        function add(){
+            if(i>=10)
+            alert("Maximum limit reached.");
+            else i++;
+            document.getElementById("counting").innerHTML = i;
+        }
+        function subtract(){
+            if(i<=0)
+            alert("Minimum limit reached.");
+            else i--;
+            document.getElementById("counting").innerHTML = i;
+        }
+    </script>
+</body>
+</html>

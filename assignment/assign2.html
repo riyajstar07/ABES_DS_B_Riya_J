@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bus Booking System</title>
+</head>
+<body>
+    <h2 align="center">Welcome to Bus Booking System</h2>
+
+    <form align="center">
+        <table border="1" cellpadding="10" cellspacing="0" align="center">
+            <tr>
+                <td><label for="userid">User Id</label></td>
+                <td><input type="text" id="userid" name="userid"></td>
+            </tr>
+            <tr>
+                <td><label for="username">User Name</label></td>
+                <td><input type="text" id="username" name="username"></td>
+            </tr>
+            <tr>
+                <td><label for="userpass">User Password</label></td>
+                <td><input type="password" id="userpass" name="userpass"></td>
+            </tr>
+            <tr>
+                <td>User Gender</td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="Male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="female">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="city">User Select City</label></td>
+                <td>
+                    <select id="city" name="city">
+                        <option value="delhi">Delhi</option>
+                        <option value="mumbai">Mumbai</option>
+                        <option value="kolkata">Kolkata</option>
+                        <option value="chennai">Chennai</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Bus Image</td>
+                <td>
+                    <img src="bus.webp" 
+                         alt="Bus Image" width="200">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Book Seat">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
